@@ -5,7 +5,7 @@
 Este Projeto usa Javascript, jQuery, knockoutJS, API do Google Maps e API do Yelp para criar um mapa dos locais para entretenimento em São Roque-SP e o Ratings dos locais, e também uma folha de estilos do Bootstrap.
 
 #### Projeto precisou de:
-Este Projeto requisita Grunt para executar o Gruntfile. Além disso o Bower e o pacote oath-signature que também são usados.
+Precisou do knockoutJS, JQuery, API's Google Maps e do YELP, além disso o Bower também é usados.
 
 #### Localizações
 Todo código fonte (desenvolvimento) está localizado no diretório directbairros.
