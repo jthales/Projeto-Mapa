@@ -1,19 +1,23 @@
 # Projeto Mapa do Bairro
 ## Udacity Desenvolvimento Front-End Projeto 09
 
-### Vis„o Geral
-Este Projeto usa Javascript, jQuery, knockoutJS, API do Google Maps e API do Yelp para criar um mapa dos locais para entretenimento em S„o Roque-SP e o Ratings dos locais, e tambÈm uma folha de estilos do Bootstrap.
+## Como Us√°-lo 
+Abra directbairros e execute o index.htm, ap√≥s aberto busque os loca√≠s de entretenimento em S√£o Roque - SP tanto por meio da barra de besquisa quanto clicando nos pontos de interesse na lista ou at√© mesmo direto no mapa.
+Com celular voc√™ pode pesquisarclicando no campo e digitando e apertar o buscar, ou usar o menu hamburguer no canto superior direito da tela.
+
+### Vis√£o Geral
+Este Projeto usa Javascript, jQuery, knockoutJS, API do Google Maps e API do Yelp para criar um mapa dos locais para entretenimento em S√£o Roque-SP e o Ratings dos locais, e tamb√©m uma folha de estilos do Bootstrap.
 
 #### Projeto precisou de:
-Precisou do knockoutJS, JQuery, API's Google Maps e do YELP, alÈm disso o Bower tambÈm È usados.
+Precisou do knockoutJS, JQuery, API's Google Maps e do YELP, al√©m disso o Bower tamb√©m √© usados.
 
-#### LocalizaÁıes
-Todo cÛdigo fonte (desenvolvimento) est· localizado no diretÛrio directbairros.
+#### Localiza√ß√µes
+Todo c√≥digo fonte (desenvolvimento) est√° localizado no diret√≥rio directbairros.
 
 ## Usando o APP
 
 #### Usando recurso pesquisa
-Os usu·rios podem filtrar os locais com base no nome do local, do bairro que est· situado ou atÈ mesmo do CEP; Apenas digitar o que ser· pesquisado e clicar em pesquisar que ser· exibido o resultado da pesquisa.
+Os usu√°rios podem filtrar os locais com base no nome do local, do bairro que est√° situado ou at√© mesmo do CEP; Apenas digitar o que ser√° pesquisado e clicar em pesquisar que ser√° exibido o resultado da pesquisa.
 
-# CrÈditos
-Desenvolvimento foi feito todo por mim com algumas pesquisas via stackoverflow de todos cÛdigos e os API's que ajudariam a melhorar o projeto.
+# Cr√©ditos
+Desenvolvimento foi feito todo por mim com algumas pesquisas via stackoverflow de todos c√≥digos e os API's que ajudariam a melhorar o projeto.
