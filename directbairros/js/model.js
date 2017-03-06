@@ -91,18 +91,18 @@ var breweryLocations = [
     neighborhood: 'Centro'
   },
   {
-    name: 'Villa Don Patto',
-    lat: -23.563124,
-    lng: -47.134718,
-    address: 'Estr do Vinho s/n° - Sorocamirim, São Roque, SP 18136-280',
-    neighborhood: 'Sorocamirim'
+    name: 'Snack House',
+    lat: -23.529986,
+    lng: -47.134632,
+    address: 'R Rui Barbosa n°305 - Centro, São Roque, SP 18130-000',
+    neighborhood: 'Centro'
   },
   {
-    name: 'Fazendinha e Reestaurante Santa Adélia',
-    lat: -23.611320,
-    lng: -47.164315,
-    address: 'R Benedito Silvino de Camargo 400 - Canguera, São Roque, SP 18145-040',
-    neighborhood: 'Canguera'
+    name: 'Padaria Martinelli',
+    lat: -23.530606,
+    lng: -47.135126,
+    address: 'Praça da Matriz n°18 - Centro, São Roque, SP 18145-040',
+    neighborhood: 'Centro'
   },
   {
     name: 'Vinícola Palmeiras',
@@ -126,11 +126,11 @@ var breweryLocations = [
     neighborhood: 'Vila Amaral'
   },
   {
-    name: 'Rancho do Netão',
-    lat: -23.554431,
-    lng: -47.125465,
-    address: 'Rua Olavo Capuzzo 180 - Taboão, São Roque, SP 18135-139',
-    neighborhood: 'Taboão'
+    name: 'Restaurante Paladar Sr',
+    lat: -23.531127,
+    lng: -47.135137,
+    address: 'R. Quinze de Novembro n°42  - Centro, São Roque, SP 18130-000',
+    neighborhood: 'Centro'
   },
   {
     name: 'Churrascaria Chama Sul',
