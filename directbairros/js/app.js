@@ -4,8 +4,6 @@ var infoWindow;
 
 var ViewModel = function () {
         'use strict';
-        var vm = new ViewModel();
-        ko.applyBindings(vm);
         var self = this;
         self.breweryList = ko.observableArray([]);
         self.filteredBreweryList = ko.observableArray([]);
@@ -29,7 +27,7 @@ var ViewModel = function () {
             self.setBreweryClickFunctions();
             self.filteredBreweryList(self.breweryList());
         };
-	
+
         self.buildBreweryLocations = function () {
             breweryLocations.forEach(function (brewItem) {
                 self.breweryList.push(new Brewery(brewItem));
@@ -169,4 +167,5 @@ var Brewery = function (data) {
         this.marker = ko.observable(marker);
     };
 
-ko.applyBindings(new ViewModel());
+var vm = new ViewModel();
+ko.applyBindings(vm);
