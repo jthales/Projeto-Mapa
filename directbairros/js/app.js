@@ -138,13 +138,6 @@ var ViewModel = function () {
 
             $.ajax(ajaxSettings);
         };
-
-        google.maps.event.addDomListener(window, 'load', function () {
-            self.initialize();
-            self.buildBreweryLocations();
-            self.setBreweryClickFunctions();
-            self.filteredBreweryList(self.breweryList());
-        });
     };
 
 var Brewery = function (data) {
