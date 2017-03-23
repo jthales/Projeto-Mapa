@@ -21,8 +21,6 @@ var ViewModel = function () {
             infoWindow = new google.maps.InfoWindow({
                 content: '<div><h4 id="brewery-name"></h4><p id="brewery-address"></p><p id="yelp"></p></div>'
             });
-
-            self.initialize();
             self.buildBreweryLocations();
             self.setBreweryClickFunctions();
             self.filteredBreweryList(self.breweryList());
@@ -61,7 +59,7 @@ var ViewModel = function () {
             brewery.marker().setAnimation(google.maps.Animation.BOUNCE);
             setTimeout(function () {
                 brewery.marker().setAnimation(null);
-            }, 750);
+            }, 1400);
         };
 
         // Filtros
