@@ -22,7 +22,6 @@ var ViewModel = function () {
                 content: '<div><h4 id="brewery-name"></h4><p id="brewery-address"></p><p id="yelp"></p></div>'
             });
 
-            self.initialize();
             self.buildBreweryLocations();
             self.setBreweryClickFunctions();
             self.filteredBreweryList(self.breweryList());
