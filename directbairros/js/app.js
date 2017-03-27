@@ -5,6 +5,7 @@ var infoWindow;
 var ViewModel = function () {
         'use strict';
         var self = this;
+		
         self.breweryList = ko.observableArray([]);
         self.filteredBreweryList = ko.observableArray([]);
 
