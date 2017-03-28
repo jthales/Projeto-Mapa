@@ -19,7 +19,8 @@
       <div id="search">
         <h3>Filtre seus pontos de interesse:</h3>
         <form id="brewery-search" class="search-area" data-bind="submit: filterBreweries">
-          <input type="text" name="search-string" id="search-str" class="search-input">
+          <!--  substitua a entrada por textIput binding aqui -->
+          <input type="text" data-bind="textInput: inputString" class="search-input">
           <input type="submit" value="Buscar" class="search-btn">
         </form>
       </div>

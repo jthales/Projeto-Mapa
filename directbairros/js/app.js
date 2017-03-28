@@ -5,7 +5,8 @@ var infoWindow;
 var ViewModel = function () {
         'use strict';
         var self = this;
-		
+        self.inputString = ko.observable();
+        // declarar Knockout observável
         self.breweryList = ko.observableArray([]);
         self.filteredBreweryList = ko.observableArray([]);
 
@@ -68,7 +69,8 @@ var ViewModel = function () {
         self.filterBreweries = function () {
             self.filteredBreweryList([]);
 
-            var searchString = $('#search-str').val().toLowerCase();
+            var searchString = self.inputString().toLowerCase();
+            // use Knockout.js observável para searchString
             var len = self.breweryList().length;
 
             for (var i = 0; i < len; i++) {
