@@ -5,8 +5,6 @@
   <title>Entretenimento São Roque e Região</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
-   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmYdoeohRBrS-lRQvugfpBmAUyaXIE3co&callback=vm.initialize"
-  type="text/javascript"></script>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -20,8 +18,7 @@
         <h3>Filtre seus pontos de interesse:</h3>
         <form id="brewery-search" class="search-area" data-bind="submit: filterBreweries">
           <!--  substitua a entrada por textIput binding aqui -->
-          <input type="text" data-bind="textInput: inputString" class="search-input">
-          <input type="submit" value="Buscar" class="search-btn">
+          <input type="text" data-bind="textInput: inputString" class="search-input">>
         </form>
       </div>
       <ul data-bind="foreach: filteredBreweryList" class="desktop-list">
@@ -55,6 +52,6 @@
     <script src="js/model.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mobile.js"></script>
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmYdoeohRBrS-lRQvugfpBmAUyaXIE3co&callback=vm.initialize" type="text/javascript"></script>
 </body>
 </html>
