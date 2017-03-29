@@ -5,11 +5,7 @@ var infoWindow;
 var ViewModel = function () {
         'use strict';
         var self = this;
-<<<<<<< HEAD
         self.inputString = ko.observable('');
-=======
-        self.inputString = ko.observable("");
->>>>>>> origin/master
         // declarar Knockout observável
         self.breweryList = ko.observableArray([]);
         self.filteredBreweryList = ko.observableArray([]);
@@ -70,11 +66,7 @@ var ViewModel = function () {
         };
 
         // Filtros
-<<<<<<< HEAD
         self.filterBreweries = ko.computed(function () {
-=======
-        self.filterBreweries = ko.computed(function() {
->>>>>>> origin/master
             self.filteredBreweryList([]);
 
             var searchString = self.inputString().toLowerCase();
@@ -93,11 +85,7 @@ var ViewModel = function () {
                 }
             }
         });
-<<<<<<< HEAD
-        // Yelp API
-=======
-
->>>>>>> origin/master
+//Yelp API
         self.getYelpData = function (brewery) {
 
             var httpMethod = 'GET';
