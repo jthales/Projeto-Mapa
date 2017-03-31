@@ -44,15 +44,9 @@ var ViewModel = function () {
         };
 
         self.breweryClick = function (brewery) {
-            // Infos
-            var infoContent = '<div><h4 id="brewery-name">' + brewery.name() + '</h4>' + '<h5 id="brewery-address">' + brewery.address() + '</h5>' + '<h6 id="brewery-neighborhood">' + brewery.neighborhood() + '</h6>' + '<p id="text">Rating on <a id="yelp-url">yelp</a>: ' + '<img id="yelp"></p></div>';
-            infoWindow.setContent(infoContent);
-
-            map.panTo(new google.maps.LatLng(brewery.lat(), brewery.lng()));
-
-            infoWindow.open(map, brewery.marker());
-
-            self.setMarkerAnimation(brewery);
+          map.panTo(new google.maps.LatLng(brewery.lat(), brewery.lng()));
+          self.getYelpData(brewery);infoWindow.open(map, brewery.marker());
+          self.setMarkerAnimation(brewery);
         };
 
         // Bounce
@@ -128,10 +122,13 @@ var ViewModel = function () {
                 cache: true,
                 dataType: 'jsonp',
                 success: function (response) {
-                    var infoContent = '<div><h4 id="brewery-name">' + brewery.name() + '</h4>' + '<h5 id="brewery-address">' + brewery.address() + '</h5>' + '<h6 id="brewery-neighborhood">' + brewery.neighborhood() + '</h6>' + '<p id="text">Rating on <a id="yelp-url">yelp</a>: ' + '<img id="yelp"></p></div>';
-                    infoWindow.setContent(infoContent);
-                    infoWindow.open(map, brewery.marker());
-                    self.getYelpData(brewery);
+                  var infoContent = '<div><h4 id="brewery-name">' + 
+                  brewery.name() + '</h4>' + '<h5 id="brewery-address">' + brewery.address() + 
+                  '</h5>' + '<h6 id="brewery-neighborhood">' + brewery.neighborhood() + 
+                  '</h6>' + '<p id="text">Rating on <a id="yelp-url" href="' + response.businesses[0].url +
+                  '">yelp</a>: ' + '<img id="yelp" src="' + response.businesses[0].rating_img_url +'"></p></div>';
+                  infoWindow.setContent(infoContent);
+                  infoWindow.open(map, brewery.marker());                    
                 },
                 error: function () {
                     $('#text').html('Data could not be retrieved from yelp.');
