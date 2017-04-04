@@ -1,4 +1,9 @@
 // Inicializa Mapa
+
+googleError = () => {
+  // Error handling
+};
+
 var map;
 var infoWindow;
 
@@ -122,13 +127,13 @@ var ViewModel = function () {
                 cache: true,
                 dataType: 'jsonp',
                 success: function (response) {
-                  var infoContent = '<div><h4 id="brewery-name">' + 
-                  brewery.name() + '</h4>' + '<h5 id="brewery-address">' + brewery.address() + 
-                  '</h5>' + '<h6 id="brewery-neighborhood">' + brewery.neighborhood() + 
+                  var infoContent = '<div><h4 id="brewery-name">' +
+                  brewery.name() + '</h4>' + '<h5 id="brewery-address">' + brewery.address() +
+                  '</h5>' + '<h6 id="brewery-neighborhood">' + brewery.neighborhood() +
                   '</h6>' + '<p id="text">Rating on <a id="yelp-url" href="' + response.businesses[0].url +
                   '">yelp</a>: ' + '<img id="yelp" src="' + response.businesses[0].rating_img_url +'"></p></div>';
                   infoWindow.setContent(infoContent);
-                  infoWindow.open(map, brewery.marker());                    
+                  infoWindow.open(map, brewery.marker());
                 },
                 error: function () {
                     $('#text').html('Data could not be retrieved from yelp.');
