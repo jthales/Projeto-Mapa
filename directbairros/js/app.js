@@ -10,6 +10,7 @@ var infoWindow;
 var ViewModel = function () {
         'use strict';
         var self = this;
+        this.yelpError = ko.observable('');
         self.inputString = ko.observable('');
         // declarar Knockout observável
         self.breweryList = ko.observableArray([]);
@@ -136,7 +137,7 @@ var ViewModel = function () {
                   infoWindow.open(map, brewery.marker());
                 },
                 error: function () {
-                    $('#text').html('Data could not be retrieved from yelp.');
+                    vm.yelpError('Data could not be retrieved from yelp.');
                 }
             };
 
@@ -166,3 +167,4 @@ var Brewery = function (data) {
 
 var vm = new ViewModel();
 ko.applyBindings(vm);
+

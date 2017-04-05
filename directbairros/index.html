@@ -24,6 +24,7 @@
       <ul data-bind="foreach: filteredBreweryList" class="desktop-list">
         <li data-bind="text: name, click: $parent.breweryClick"></li>
       </ul>
+      <h3 data-bind="html: yelpError"></h3>
     </div>
 
     <!-- Google Maps -->
