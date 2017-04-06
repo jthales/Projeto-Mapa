@@ -1,7 +1,7 @@
 // Inicializa Mapa
 
 googleError = () => {
-  // Error handling
+  alert('Erro Google Recarregue a Página');
 };
 
 var map;
